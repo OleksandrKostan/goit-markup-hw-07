@@ -43,14 +43,14 @@ img {
   background-color: var(--primary-white-color);
   border-bottom: 1px solid #ececec;
 }
-.main-nav {
+
+.page-header__nav {
   display: flex;
   align-items: center;
 }
-
-.contact-icon {
-  margin-right: 10px;
-  fill: currentColor;
+.nav {
+  display: flex;
+  align-items: center;
 }
 
 /* logo */
@@ -61,7 +61,7 @@ img {
   color: var(--accent-color);
   text-decoration: none;
 }
-.logo-title {
+.logo__accent {
   color: var(--primary-text-color);
 }
 
@@ -75,11 +75,11 @@ img {
   display: flex;
   margin-left: 93px;
 }
-.site-nav .item + .item {
+.site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
 
-.site-nav a {
+.site-nav__link {
   color: var(--primary-text-color);
   font-family: inherit;
   font-weight: 500;
@@ -95,14 +95,14 @@ img {
 
   transition: color 250ms var(--primary-cubic);
 }
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent-color);
 }
-.link.current {
+.link.site-nav__link--current {
   color: var(--accent-color);
 }
-.link.current::after {
+.link.site-nav__link--current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -118,11 +118,11 @@ img {
   display: flex;
   margin-left: auto;
 }
-.contakt .item + .item {
+.contakt__item + .contakt__item {
   margin-left: 50px;
 }
 
-.contakt a {
+.contakt__list {
   display: flex;
   color: var(--title-text-color);
   font-weight: 500;
@@ -134,11 +134,14 @@ img {
 
   transition: color 250ms var(--primary-cubic);
 }
-.contakt a:hover,
-.contakt a:focus {
+.contakt__list:hover,
+.contakt__list:focus {
   color: var(--accent-color);
 }
-
+.contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
 /* hero */
 .hero {
   max-width: 1600px;
