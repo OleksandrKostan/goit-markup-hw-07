@@ -322,33 +322,31 @@ img {
   font-size: 14px;
 }
 /* команда */
-.team {
+.command__team {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   color: #212121;
   margin-bottom: 10px;
 }
-.team-text {
+.command__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   color: var(--title-text-color);
 }
-.name {
+.command__name {
   padding-top: 30px;
   padding-bottom: 16px;
 }
-.commands {
+.section__command {
   background-color: #f5f4fa;
-  padding-top: 95px;
-  padding-bottom: 95px;
 }
 .command {
   display: flex;
   margin-right: -30px;
 }
-.command .item {
+.command__item {
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
@@ -358,11 +356,11 @@ img {
   margin-right: 30px;
   text-align: center;
 }
-.social-list {
+.social__list {
   display: inline-flex;
   margin-bottom: 30px;
 }
-.social-link {
+.social__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -374,15 +372,15 @@ img {
   transition: fill 250ms var(--primary-cubic),
     background-color 250ms var(--primary-cubic);
 }
-.social-item {
+.social__item {
   margin-right: 10px;
 }
-.social-item:last-child {
+.social__item:last-child {
   margin-right: 0;
 }
 
-.command .social-link:hover,
-.command .social-link:focus {
+.command .social__link:hover,
+.command .social__link:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
