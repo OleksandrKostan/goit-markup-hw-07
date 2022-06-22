@@ -657,6 +657,7 @@ img {
   transform: translateY(0);
 }
 
+/* modal */
 .backdrop {
   position: fixed;
   top: 0;
@@ -694,7 +695,7 @@ img {
   background-color: var(--primary-white-color);
 }
 
-.modal .close {
+.modal__close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -714,33 +715,33 @@ img {
   transition: fill 250ms var(--primary-cubic);
 }
 
-.modal .close:hover {
+.modal__close:hover {
   fill: var(--accent-color);
 }
-.close-icon {
+.modal__close--icon {
   text-align: center;
 }
 
-.modal-title {
+.modal__title {
   display: inline-block;
   margin-bottom: 12px;
 
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  /* text-align: center; */
+
   color: var(--primary-text-color);
 }
 
-.feedback-thumb {
+.feedback__thumb {
   position: relative;
 }
 
-.feedback-thumb:not(:last-child) {
+.feedback__thumb:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.feedback-title {
+.feedback__title {
   position: relative;
   display: block;
   margin-bottom: 4px;
@@ -751,7 +752,7 @@ img {
   color: var(--title-text-color);
 }
 
-.feedback-input {
+.feedback__input {
   width: 100%;
   height: 40px;
 
@@ -762,12 +763,12 @@ img {
   transition: border-color 250ms var(--primary-cubic);
 }
 
-.feedback-input:focus {
+.feedback__input:focus {
   outline: none;
   border-color: var(--accent-color);
 }
 
-.feedback-icon {
+.feedback__icon {
   position: absolute;
   top: 29px;
   left: 12px;
@@ -775,11 +776,11 @@ img {
   transition: fill 250ms var(--primary-cubic);
 }
 
-.feedback-input:focus ~ .feedback-icon {
+.feedback__input:focus ~ .feedback__icon {
   fill: var(--accent-color);
 }
 
-.input-comment {
+.feedback__input--comment {
   padding: 12px 16px;
   width: 100%;
   height: 120px;
@@ -793,17 +794,17 @@ img {
   transition: border-color 250ms var(--primary-cubic);
 }
 
-.input-comment::placeholder {
+.feedback__input--comment::placeholder {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.input-comment:focus {
+.feedback__input--comment:focus {
   outline: none;
   border-color: var(--accent-color);
 }
 
-.feedback-thumb.comments {
+.feedback__thumb--comments {
   margin-bottom: 20px;
 }
 
@@ -812,14 +813,14 @@ img {
   margin-left: 40px;
 }
 
-.agreement-title {
+.agreement__title {
   position: relative;
   display: flex;
   align-items: center;
   font-size: 14px;
 }
 
-.checkbox {
+.agreement__checkbox {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -832,7 +833,7 @@ img {
   margin: -1px;
 }
 
-.icon {
+.agreement__icon {
   position: absolute;
   top: 3px;
   left: 0;
@@ -847,61 +848,54 @@ img {
   transition: all 250ms var(--primary-cubic);
 }
 
-.checkbox:focus + .icon {
+.agreement__checkbox:focus + .agreement__icon {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.checkbox:checked + .icon {
+.agreement__checkbox:checked + .agreement__icon {
   background-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
   border-color: var(--accent-color);
 }
 
-.agreement-title {
+.agreement__title {
   line-height: 1.714;
 }
 
-.agreement-link {
+.agreement__link {
   color: var(--accent-color);
   margin-left: 4px;
 
   transition: color 250ms var(--primary-cubic);
 }
 
-.agreement-link:hover,
-.agreement-link:focus {
+.agreement__link:hover,
+.agreement__link:focus {
   color: var(--hero-button-hover);
 }
 
 /* .agreement-chek {
 } */
 
-.modal-submit-button {
+.modal__submit--button {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 200px;
   height: 50px;
 
-  cursor: pointer;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-
   color: var(--primary-white-color);
 
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+
   border-color: transparent;
 
   transition: background-color 250ms var(--primary-cubic);
 }
 
-.modal-submit-button:hover,
-.modal-submit-button:focus {
+.modal__submit--button:hover,
+.modal__submit--button:focus {
   background-color: #188ce8;
 }
