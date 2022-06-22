@@ -472,28 +472,28 @@ img {
 .join {
   margin-right: auto;
 }
-.join .title {
+.join__title {
   margin-bottom: 20px;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--primary-white-color);
   font-size: 14px;
 }
-.join .social__link {
+.social__link--footer {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   fill: var(--primary-white-color);
   transition: background-color 250ms var(--primary-cubic);
 }
-.join .social__link:hover,
-.join .social__link:focus {
+.social__link--footer:hover,
+.social__link--footer:focus {
   background-color: var(--accent-color);
 }
 
 /* .subscribe {
 } */
 
-.subscripe-title {
+.subscripe__title {
   display: inline-block;
   font-weight: 700;
   text-transform: uppercase;
@@ -503,7 +503,7 @@ img {
   margin-bottom: 20px;
 }
 
-.subscripe-input {
+.subscripe__input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -521,19 +521,19 @@ img {
   transition: border-color 250ms var(--primary-cubic);
 }
 
-.form-field:focus-within .subscripe-input {
+.subscripe__form-field:focus-within .subscripe__input {
   outline: none;
   border-color: var(--accent-color);
 }
 
-.subscripe-input::placeholder {
+.subscripe__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
 
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscripe-button {
+.subscripe__button {
   min-width: 200px;
   height: 50px;
   font-weight: 700;
@@ -554,12 +554,12 @@ img {
   transition: background-color 250ms var(--primary-cubic);
 }
 
-.subscripe-button:hover,
-.subscripe-button:focus {
+.subscripe__button:hover,
+.subscripe__button:focus {
   background-color: #188ce8;
 }
 
-.subscripe-button::after {
+.subscripe__button::after {
   content: "";
   margin-left: 10px;
   fill: currentColor;
