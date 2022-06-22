@@ -258,14 +258,14 @@ img {
   flex-wrap: wrap;
   margin-right: -30px;
 }
-.peculiarity .item {
+.peculiarity__item {
   margin-right: 30px;
   flex-basis: calc(100% / 4 - 30px);
 }
-.peculiarity .item:nth-child(4) {
+.peculiarity__item:nth-child(4) {
   margin-right: 0;
 }
-.peculiarity .title {
+.peculiarity__title {
   color: var(--primary-text-color);
   font-size: 14px;
   font-weight: 700;
@@ -274,7 +274,7 @@ img {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.peculiarity-thumb {
+.peculiarity__thumb {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
@@ -284,14 +284,13 @@ img {
   justify-content: center;
 }
 
-.title-text {
+.peculiarity__text {
   color: var(--title-text-color);
+
   list-style: none;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
-  /* width: 270px;
-  height: 75px; */
+  line-height: 1.71;
 }
 /* чем ми занимаемся */
 .section.what {
