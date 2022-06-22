@@ -235,7 +235,7 @@ img {
 }
 
 /* section */
-.section-title {
+.section__title {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -293,22 +293,20 @@ img {
   line-height: 1.71;
 }
 /* чем ми занимаемся */
-.section.what {
-  padding-bottom: 94px;
-}
-.what-img {
+
+.work {
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc(100% / 3 - 30px);
 }
-.what-img li + li {
+.work__item + .work__item {
   margin-left: 30px;
 }
-.what-img .thumb {
+.work__item {
   position: relative;
 }
 
-.what-img .thumb .text {
+.work__text {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -321,6 +319,7 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  font-size: 14px;
 }
 /* команда */
 .team {
