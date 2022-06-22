@@ -6,10 +6,11 @@
 .peculiarity__item {
   margin-right: 30px;
   flex-basis: calc(100% / 4 - 30px);
-}
-.peculiarity__item:nth-child(4) {
+
+&:nth-child(4) {
   margin-right: 0;
-}
+}}
+
 .peculiarity__title {
   color: var(--primary-text-color);
   font-size: 14px;

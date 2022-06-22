@@ -47,16 +47,15 @@
 
   transition: fill 250ms var(--primary-cubic),
     background-color 250ms var(--primary-cubic);
+  .command &:hover,
+  .command &:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+  }
 }
 .social__item {
   margin-right: 10px;
 }
 .social__item:last-child {
   margin-right: 0;
-}
-
-.command .social__link:hover,
-.command .social__link:focus {
-  background-color: var(--accent-color);
-  fill: var(--primary-white-color);
 }

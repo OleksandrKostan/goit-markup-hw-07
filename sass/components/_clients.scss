@@ -21,9 +21,10 @@
   fill: #afb1b8;
   transition: border-color 250ms var(--primary-cubic),
     fill 250ms var(--primary-cubic);
-}
-.clients__link:hover,
-.clients__link:focus {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
