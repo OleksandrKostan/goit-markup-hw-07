@@ -25,6 +25,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 h1,
 h2,
 h3,
@@ -38,7 +39,18 @@ img {
   display: block;
   max-width: 100%;
 }
-
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 .page-header {
   background-color: var(--primary-white-color);
   border-bottom: 1px solid #ececec;
@@ -160,7 +172,7 @@ img {
   background-position: center;
   background-color: #2f303a;
 }
-.hero-title {
+.hero__title {
   width: 696px;
   padding-top: 200px;
   padding-bottom: 30px;
@@ -186,7 +198,7 @@ img {
   cursor: pointer;
   border-radius: 4px;
 }
-.button.primary {
+.button__primary {
   display: inline-block;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
@@ -197,7 +209,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms var(--primary-cubic);
 }
-.button.primary:hover {
+.button__primary:hover {
   background-color: #188ce8;
 }
 .button.secondary {
@@ -231,14 +243,16 @@ img {
   text-align: center;
   margin-bottom: 50px;
 }
-/* ocoбености */
-.section-none {
-  display: none;
-}
-.section.peculiarity {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.section__padding {
+  padding-bottom: 0;
+}
+
+/* ocoбености */
+
 .peculiarity {
   display: flex;
   flex-wrap: wrap;
