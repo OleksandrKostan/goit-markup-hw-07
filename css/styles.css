@@ -582,7 +582,7 @@ img {
 }
 
 /* групи портфоліо */
-.images-text {
+.description__images--text {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -590,19 +590,19 @@ img {
   color: #212121;
   margin-bottom: 4px;
 }
-.image-indent {
+.description__image--indent {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   color: #757575;
 }
 
-.flex-conteiner {
+.flex {
   display: flex;
   flex-wrap: wrap;
   margin: -15px -15px;
 }
-.flex-element {
+.flex__element {
   transition: box-shadow 250ms var(--primary-cubic);
 
   flex-basis: calc((100% - 90px) / 3);
@@ -616,21 +616,21 @@ img {
   border-bottom: 1px solid #eeeeee;
 }
 
-.flex-conteiner .link {
+.flex__link {
   display: block;
   color: #757575;
   text-decoration: none;
 }
 
-.flex-conteiner .flex-element:hover {
+.flex__element:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.flex-conteiner .thumb {
+.flex__thumb {
   position: relative;
   overflow: hidden;
 }
-.portfolio-description {
+.flex__text {
   position: absolute;
   transform: translateY(100%);
   /* opacity: 0; */
@@ -650,8 +650,8 @@ img {
   color: var(--primary-white-color);
   background: rgba(33, 150, 243, 0.9);
 }
-.flex-conteiner .link:hover .portfolio-description,
-.flex-conteiner .link:focus .portfolio-description {
+.flex__link:hover .flex__text,
+.flex__link:focus .flex__text {
   /* opacity: 1; */
   transform: translateY(0);
 }
