@@ -582,6 +582,12 @@ img {
 }
 
 /* групи портфоліо */
+.description {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
 .description__images--text {
   font-weight: 700;
   font-size: 18px;
@@ -607,13 +613,6 @@ img {
 
   flex-basis: calc((100% - 90px) / 3);
   margin: 15px 15px;
-}
-
-.description {
-  padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .flex__link {
@@ -789,7 +788,6 @@ img {
   font-size: 14px;
 
   resize: none;
-
   transition: border-color 250ms var(--primary-cubic);
 }
 
