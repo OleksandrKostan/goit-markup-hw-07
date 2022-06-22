@@ -14,8 +14,8 @@
 .page {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  background-color: #ffffff;
-  color: #757575;
+  background-color: var(--primary-white-color);
+  color: var(--title-text-color);
 }
 
 .container {
